@@ -657,7 +657,7 @@ components:
           uniqueItems: true
         descripcion:
           type: string
-        desarrolllador:
+        desarrollador:
           type: string
           format: objectId
           example: 605c4d36a2cfde067c6c266d

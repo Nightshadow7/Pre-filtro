@@ -1,157 +1,57 @@
-# [Material Tailwind Dashboard React](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/?ref=readme-mtdr)
+## 🕹️ Sistema de Administración de Compras de Juegos en Línea (Desarrollado con MERN)
 
-![version](https://img.shields.io/badge/version-1.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-tailwind-dashboard-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-tailwind-dashboard-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-tailwind-dashboard-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-tailwind-dashboard-react/issues?q=is%3Aissue+is%3Aclosed)
+**Este sistema de administración está diseñado para ayudarte a gestionar eficazmente la información de compra de juegos en una tienda virtual de juegos en línea. Fue desarrollado utilizando el stack MERN, que incluye MongoDB, Express.js, React y Node.js. Con esta aplicación, puedes gestionar proveedores, productos, empleados, sucursales y clientes de manera conveniente y eficiente.**
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/488/original/opt_md_tailwindreact_thumbnail.jpg)
+<br>
 
-Material Tailwind Dashboard React is a _free_ Admin Template based on two popular front-end technologies: _Tailwind CSS & React_. It was built to simplify the developer's work and is comes with a fresh design inspired by Google's Material Design. All its components are built to fit perfectly with each other, while aligning to the material concepts.
+# 💡 Objetivo
 
-Save weeks of time and build your perfect dashboard with this powerful template! It features 120 fully coded components and 4 example pages if you want to get inspiration or just show something directly to your clients. This beautiful admin also comes with 5 color filter choices for both the sidebar and the card headers (blue, green, orange, red and purple) and an option to have a background image on the sidebar.
+**Se centra en la creación de una herramienta que mejore la eficiencia y la organización en una tienda virtual de juegos en línea, facilitando la gestión de múltiples aspectos importantes de la operación empresarial.**
 
-Material Tailwind Dashboard React is built based on our very popular Material Kit (https://www.creative-tim.com/product/material-kit). It makes use of light, surface and movement. The general layout resembles sheets of paper following multiple layers, so that the depth and order is obvious. Inside the archive you will find multiple example pages on how to use all components. And, of course, every element is well-documented.
+<br>
 
-## Table of Contents
+# 📋 Funcionalidades Principales
 
--   [Versions](#versions)
--   [Demo](#demo)
--   [Quick Start](#quick-start)
--   [Documentation](#documentation)
--   [File Structure](#file-structure)
--   [Browser Support](#browser-support)
--   [Resources](#resources)
--   [Reporting Issues](#reporting-issues)
--   [Technical Support or Questions](#technical-support-or-questions)
--   [Licensing](#licensing)
--   [Useful Links](#useful-links)
+- **Gestión de Biblioteca: Administra y organiza la colección de juegos de un usuario, permitiéndole agregar, eliminar y consultar los títulos que posee en su biblioteca de juegos.**
 
-## Versions
+- **Gestión de Usuario: Maneja las operaciones de registro, inicio de sesión y gestión de datos de usuario, como nombre, correo electrónico y contraseña, proporcionando autenticación y autorización en la plataforma de juegos.**
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-tailwind-dashboard-react?ref=readme-mtdr)
-| React |
-| ----- |
+- **Gestión de Perfil_Usuario:  Permite a los usuarios personalizar sus perfiles con información adicional, como nombre completo, fecha de nacimiento, país y avatar de perfil, mejorando la experiencia de juego social.**
 
-| [![Material Tailwind Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/488/original/opt_md_tailwindreact_thumbnail.jpg)](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/?ref=readme-mtdr)
+- **Gestión de Juego:  Facilita la administración de juegos disponibles en la plataforma, incluyendo la adición de nuevos títulos, eliminación de juegos obsoletos y detalles como título, descripción y fecha de lanzamiento.**
 
-## Demo
+- **Gestión de Desarrollador: Administra la información de los desarrolladores de juegos, como nombre de la empresa y país de origen, para mostrar créditos y detalles de contacto en la plataforma de juegos.**
 
--   [Dashboard](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/?ref=readme-mtdr)
--   [Settings](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/settings?ref=readme-mtdr)
--   [Tables](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/tables?ref=readme-mtdr)
--   [Maps](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/maps?ref=readme-mtdr)
+<br>
 
-## Quick start
+# 🖇️ Diagrama Entidad Relación
 
-Quick start options:
+![Diagrama Entidad Relación](./backend/db/db.png)
 
--   Download from [Creative Tim](https://www.creative-tim.com/product/material-tailwind-dashboard-react?ref=readme-mtdr).
+## Diagrama Entidad relacion en SQL
 
-## Terminal Commands
+![Diagrama Entidad Relación](./backend/db/db.sql)
 
-1. Download and Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/download/).
-2. Navigate to the root / directory and run npm install or (yarn install, if you're using yarn) to install our local dependencies.
+<br>
 
-## Documentation
+# 🎨 Diseño UIX
 
-Material Tailwind Dashboard React build using Material Tailwind and the documentation of Material Tailwind is hosted at [Material Tailwinl](https://material-tailwind.com/documentation/quick-start?ref=readme-mtdr).
+![Diseño UIX](./frontend/src/assets/UIX.png)
 
-### What's included
+# Tecnologías Utilizadas
 
-Within the download you'll find the following directories and files:
+<div align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" width="70" height="70" stroke="white"/>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="70" height="70" />
+</div>
 
-```
-Material Tailwind Dashboard React
-    ├── material-tailwind-dashboard-react
-    │   ├── public
-    │   │   ├── index.html
-    │   │   ├── favicon.ico
-    │   │   └── apple-icon.png
-    │   ├── src
-    │   │   ├── assets
-    │   │   │   ├── img/
-    │   │   │   └── styles/
-    │   │   ├── components
-    │   │   │   ├── AdminNavbar.js
-    │   │   │   ├── ChartBar.js
-    │   │   │   ├── ChartLine.js
-    │   │   │   ├── Footer.js
-    │   │   │   ├── MapExample.js
-    │   │   │   ├── PageVisitsCard.js
-    │   │   │   ├── ProfileCard.js
-    │   │   │   ├── SettingsForm.js
-    │   │   │   ├── Sidebar.js
-    │   │   │   ├── StatusCard.js
-    │   │   │   ├── TableCard.js
-    │   │   │   └── TrafficCard.js
-    │   │   ├── Pages
-    │   │   │   ├── Dashboard.js
-    │   │   │   ├── Maps.js
-    │   │   │   ├── Settings.js
-    │   │   │   └── Tables.js
-    │   │   ├── App.js
-    │   │   ├── App.test.js
-    │   │   ├── index.js
-    │   │   ├── reportWebVitals.js
-    │   │   └── setup.test.js
-    │   ├── CHANGELOG.md
-    │   ├── jsconfig.json
-    │   ├── LICENSE
-    │   ├── package.json
-    │   ├── postcss.config.js
-    │   ├── README.md
-    │   ├── tailwind.config.js
-    │   ├── yarn.lock
-```
+<br>
 
-## Browser Support
+# 🖋️Autor
 
-At present, we officially aim to support the last two versions of the following browsers:
-
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
-
-## Resources
-
--   [Live Preview](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/?ref=readme-mtdr)
--   [Download Page](https://www.creative-tim.com/product/material-tailwind-dashboard-react?ref=readme-mtdr)
--   Documentation is [here](https://material-tailwind.com/documentation/quick-start?ref=readme-mtdr)
--   [License Agreement](https://www.creative-tim.com/license?ref=readme-mtdr)
--   [Support](https://www.creative-tim.com/contact-us?ref=readme-mtdr)
--   Issues: [Github Issues Page](https://github.com/creativetimofficial/material-tailwind-dashboard-react/issues)
-
-## Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the Material Tailwind Dashboard React. Here are some advices for our users that want to report an issue:
-
-1. Make sure that you are using the latest version of the Material Tailwind Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-tailwind-dashboard-react?ref=readme-mtdr).
-2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
-3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
-
-## Technical Support or Questions
-
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-mtdr) instead of opening an issue.
-
-## Licensing
-
--   Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-mtdr)
--   Creative Tim [license](https://www.creative-tim.com/license?ref=readme-mtdr)
-
-## Useful Links
-
--   [More products](https://www.creative-tim.com/templates?ref=readme-mtdr) from Creative Tim
-
--   [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
-
--   [Freebies](https://www.creative-tim.com/templates/free?ref=readme-mtdr) from Creative Tim
-
--   [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-mtdr) (earn money)
-
-##### Social Media
-
-Twitter: <https://twitter.com/CreativeTim>
-
-Facebook: <https://www.facebook.com/CreativeTim>
-
-Dribbble: <https://dribbble.com/creativetim>
-
-Google+: <https://plus.google.com/+CreativetimPage>
-
-Instagram: <https://instagram.com/creativetimofficial>
+**Anthoni Hernandez**
