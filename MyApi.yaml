@@ -1,0 +1,722 @@
+openapi: 3.0.3
+info:
+  title: API de Videojuegos
+  description: Es un sistema de administración diseñado para ayudarte a gestionar eficazmente la información de compra de juegos en una tienda virtual.
+  version: 1.0.0
+servers:
+  - url: http://localhost:8000/
+tags:
+  - name: Bibliotecas
+  - name: Desarrolladores
+  - name: Juegos
+  - name: Perfil de Usuarios
+  - name: Usuarios
+
+paths:
+  #Bibliotecas
+  /api/bibliotecas:
+    get:
+      tags:
+        - Bibliotecas
+      summary: Muestra la biblioteca de cada uno de los Usuarios Registrados
+      responses:
+        200:
+          description: (OK) lista de bibliotecas obtenida con exito
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    post:
+      tags:
+        - Bibliotecas
+      summary: Inserta la informacion de un nuevo juego a la biblioteca del usuario.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BibliotecaPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  /api/{idBilioteca}:
+    get:
+      tags:
+        - Bibliotecas
+      summary: Obtiene la informacion unica de cada una de las colecciones encontradas en la base de datos
+      parameters:
+        - name: idBiblioteca
+          in: path
+          description: Se obtiene la informacion de una Biblioteca solicitada
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    patch:
+      tags:
+        - Bibliotecas
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idBiblioteca
+          in: path
+          description: Actualiza la informacion de la respectiva biblioteca
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      requestBody:
+        description: Añade los datos de los siguientes campos a modificar
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BibliotecaPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    delete:
+      tags:
+        - Bibliotecas
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idBiblioteca
+          in: path
+          description: Se elimina la biblioteca de la base de datos.
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+            
+      responses:
+        200:
+          description: (OK) El cliente fue borrado exitosamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  #Desarrolladores
+  /api/desarrolladores:
+    get:
+      tags:
+        - Desarrolladores
+      summary: Muestra cada uno de los Desarrolladores Registrados
+      responses:
+        200:
+          description: (OK) lista de Desarrolladores obtenida con exito
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    post:
+      tags:
+        - Desarrolladores
+      summary: Inserta la informacion de un nuevo Desarrollador.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DesarrolladorPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  /api/{idDesarrollador}:
+    get:
+      tags:
+        - Desarrolladores
+      summary: Obtiene la informacion unica de cada una de los Desarrolladores encontrados en la base de datos.
+      parameters:
+        - name: idBiblioteca
+          in: path
+          description: Se obtiene la informacion de un Desarrollador solicitado.
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    patch:
+      tags:
+        - Desarrolladores
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idDesarrollador
+          in: path
+          description: Actualiza la informacion del respectivo Desarrollador
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      requestBody:
+        description: Añade los datos de los siguientes campos a modificar
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/DesarrolladorPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    delete:
+      tags:
+        - Desarrolladores
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idDesarrollador
+          in: path
+          description: Se elimina el Desarrollador de la base de datos.
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+            
+      responses:
+        200:
+          description: (OK) El cliente fue borrado exitosamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  #Juegos
+  /api/juegos:
+    get:
+      tags:
+        - Juegos
+      summary: Muestra cada uno de los Juegos Registrados
+      responses:
+        200:
+          description: (OK) lista de Juegos obtenida con exito
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    post:
+      tags:
+        - Juegos
+      summary: Inserta la informacion de un nuevo Juego.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/JuegoPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  /api/{idJuego}:
+    get:
+      tags:
+        - Juegos
+      summary: Obtiene la informacion unica de cada una de los Juegos encontrados en la base de datos.
+      parameters:
+        - name: idBiblioteca
+          in: path
+          description: Se obtiene la informacion de un Juego solicitado.
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    patch:
+      tags:
+        - Juegos
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idJuego
+          in: path
+          description: Actualiza la informacion del respectivo Juego
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      requestBody:
+        description: Añade los datos de los siguientes campos a modificar
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/JuegoPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    delete:
+      tags:
+        - Juegos
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idJuego
+          in: path
+          description: Se elimina el juego de la base de datos
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+            
+      responses:
+        200:
+          description: (OK) El cliente fue borrado exitosamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  #Perfil de Usuarios
+  /api/perfil_Usuarios:
+    get:
+      tags:
+        - Perfil de Usuarios
+      summary: Muestra cada uno de los Perfil de Usuarios Registrados
+      responses:
+        200:
+          description: (OK) lista de Perfil de Usuarios obtenida con exito
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    post:
+      tags:
+        - Perfil de Usuarios
+      summary: Inserta la informacion de un nuevo perfil de Usuario.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PerfilUsuarioPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  /api/{idPerfil_Usuario}:
+    get:
+      tags:
+        - Perfil de Usuarios
+      summary: Obtiene la informacion unica de cada uno de los Perfiles de Usuarios encontrados en la base de datos.
+      parameters:
+        - name: idPerfil_Usuario
+          in: path
+          description: Se obtiene la informacion de un Perfil de Usuario solicitado.
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    patch:
+      tags:
+        - Perfil de Usuarios
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idPerfil_Usuario
+          in: path
+          description: Actualiza la informacion del respectivo Perfil de Usuario
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      requestBody:
+        description: Añade los datos de los siguientes campos a modificar
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PerfilUsuarioPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    delete:
+      tags:
+        - Perfil de Usuarios
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idPerfil_Usuario
+          in: path
+          description: Se elimina el Perfil de Usuario de la base de datos
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+            
+      responses:
+        200:
+          description: (OK) El cliente fue borrado exitosamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  #Usuarios
+  /api/usuarios:
+    get:
+      tags:
+        - Usuarios
+      summary: Muestra cada uno de los Usuarios Registrados
+      responses:
+        200:
+          description: (OK) lista de Usuarios obtenida con exito
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    post:
+      tags:
+        - Usuarios
+      summary: Inserta la informacion de un nuevo Usuario.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UsuarioPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+  /api/{idUsuario}:
+    get:
+      tags:
+        - Usuarios
+      summary: Obtiene la informacion unica de cada uno de los Perfiles de Usuarios encontrados en la base de datos.
+      parameters:
+        - name: idUsuario
+          in: path
+          description: Se obtiene la informacion de un Usuario solicitado.
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    patch:
+      tags:
+        - Usuarios
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idUsuario
+          in: path
+          description: Actualiza la informacion del respectivo del Usuario
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+      requestBody:
+        description: Añade los datos de los siguientes campos a modificar
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/UsuarioPost"
+      responses:
+        200:
+          description: (OK) la informacion se guardo correctamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+    delete:
+      tags:
+        - Usuarios
+      summary: Busca en la base de datos la coincidencia
+      parameters:
+        - name: idUsuario
+          in: path
+          description: Se elimina el Usuario de la base de datos
+          required: true
+          schema:
+            type: string
+            format: objectId
+            example: 605c4d36a2cfde067c6c266d
+            minLength: 24
+            maxLength: 24
+            
+      responses:
+        200:
+          description: (OK) El cliente fue borrado exitosamente
+        400:
+          $ref: "#/components/responses/BadRequest"
+        404:
+          $ref: "#/components/responses/NotFound"
+        500:
+          $ref: "#/components/responses/ServerError"
+
+
+components:
+  responses:
+    NotFound:
+      description: (NotFound) no se encontro la informacion
+    BadRequest:
+      description: (BadRequest) Los datos enviados son incorrectos o hay datos obligatorios no enviados
+    ServerError:
+      description: Error en el servidor
+
+  schemas:
+    BibliotecaPost:
+      type: object
+      properties:
+        usuario:
+          type: string
+          format: objectId
+          example: 605c4d36a2cfde067c6c266d
+        juegoAdquirido:
+          type: string
+          format: objectId
+          example: 605c4d36a2cfde067c6c266d
+        fechaAdquisicion:
+          type: string
+          format: date
+          example: 1990-01-01
+
+    DesarrolladorPost:
+      type: object
+      properties:
+        nombreDesarrollador:
+          type: string
+          uniqueItems: true
+          example: Marcus Holloway
+        paisOrigen:
+          type: string
+          example: Liechtenstein
+        estado:
+          type: boolean
+          default: true
+
+    JuegoPost:
+      type: object
+      properties:
+        tituloJuego:
+          type: string
+          uniqueItems: true
+        descripcion:
+          type: string
+        desarrolllador:
+          type: string
+          format: objectId
+          example: 605c4d36a2cfde067c6c266d
+        fechaLanzamiento:
+          type: string
+          format: date
+          example: 1990-01-01
+        clasificacionEdades:
+          type: string
+          enum:
+            - RP #Pendiente por clasificacion
+            - E #Todas las edades
+            - E 10+ #Todos los mayores de 10 años contiene escenas moderadas de violencia
+            - T #Adolescente mayores de 13 años
+            - M #Maduros Dirijido a m ayores de 17 años
+            - A #adulto mayores de 18+
+        estado:
+          type: boolean
+          default: true
+
+    PerfilUsuarioPost:
+      type: object
+      properties:
+        usuario:
+          type: string
+          format: objectId
+          example: 605c4d36a2cfde067c6c266d
+        nombres:
+          type: string
+        apellido:
+          type: string
+        fechaNacimiento:
+          type: string
+          format: date
+          example: 2019-09-13
+        pais:
+          type: string
+        avatarPerfil:
+          type: string
+          uniqueItems: true
+          minLength: 18
+          maxLength: 99
+        estado:
+          type: boolean
+          default: true
+
+    UsuarioPost:
+      type: object
+      properties:
+        nombreUsuario:
+          type: string
+          uniqueItems: true
+          minLength: 6
+          maxLength: 18
+        correoElectronico:
+          type: string
+          format: email
+        contraseña:
+          type: string
+          format: password
+          minLength: 6
+          maxLength: 19
