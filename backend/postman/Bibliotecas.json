@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "fb416363-faa3-4ccf-9210-7d495561cc23",
+		"name": "Biblioteca",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28938941",
+		"_collection_link": "https://universal-meteor-4399.postman.co/workspace/AlquilerCarros~f77d6237-bbad-4a1a-a617-5b022f3c3196/collection/28938941-fb416363-faa3-4ccf-9210-7d495561cc23?action=share&source=collection_link&creator=28938941"
+	},
+	"item": [
+		{
+			"name": "getBiblioteca",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/bibliotecas/"
+			},
+			"response": []
+		},
+		{
+			"name": "oneBiblioteca",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/bibliotecas/"
+			},
+			"response": []
+		},
+		{
+			"name": "añadirBiblioteca",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8000/api/bibliotecas/"
+			},
+			"response": []
+		},
+		{
+			"name": "borrarBiblioteca",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/api/bibliotecas/"
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarBiblioteca",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": "http://localhost:8000/api/bibliotecas/"
+			},
+			"response": []
+		}
+	]
+}

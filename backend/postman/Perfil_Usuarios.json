@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "fb416363-faa3-4ccf-9210-7d495561cc23",
+		"name": "Perfil_Usuarios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "28938941",
+		"_collection_link": "https://universal-meteor-4399.postman.co/workspace/AlquilerCarros~f77d6237-bbad-4a1a-a617-5b022f3c3196/collection/28938941-fb416363-faa3-4ccf-9210-7d495561cc23?action=share&source=collection_link&creator=28938941"
+	},
+	"item": [
+		{
+			"name": "getPerfil_Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/perfil_Usuarios/"
+			},
+			"response": []
+		},
+		{
+			"name": "onePerfil_Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/perfil_Usuarios/"
+			},
+			"response": []
+		},
+		{
+			"name": "añadirPerfil_Usuarios",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8000/api/perfil_Usuarios/"
+			},
+			"response": []
+		},
+		{
+			"name": "borrarPerfil_Usuarios",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/api/perfil_Usuarios/"
+			},
+			"response": []
+		},
+		{
+			"name": "actualizarPerfil_Usuarios",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": "http://localhost:8000/api/perfil_Usuarios/"
+			},
+			"response": []
+		}
+	]
+}

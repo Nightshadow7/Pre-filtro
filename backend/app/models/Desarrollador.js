@@ -1,24 +1,15 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
-const UsuarioSchema = new Schema(
+const DesarrolladorSchema = new Schema(
   {
-    nombreUsuario: {
+    nombreDesarrollador: {
       type: String,
       required: true,
       unique: true,
     },
-    correoElectronico: {
+    paisOrigen: {
       type: String,
-      required: true,
-      unique: true,
-    },
-    contraseña: {
-      type: String,
-      required: true,
-    },
-    fechaRegistro: {
-      type: Date,
       required: true,
     },
     estado:{
@@ -33,6 +24,10 @@ const UsuarioSchema = new Schema(
   }
 );
 
-const Usuario = mongoose.model("Usuarios", UsuarioSchema, "Usuarios");
+const Desarrollador = mongoose.model(
+  "Desarrolladores",
+  DesarrolladorSchema,
+  "Desarrolladores"
+);
 
-export default Usuario;
+export default Desarrollador;

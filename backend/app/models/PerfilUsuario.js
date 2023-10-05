@@ -1,45 +1,49 @@
 import mongoose from "mongoose";
-import {Schema} from 'mongoose';
+const Schema = mongoose.Schema;
 
-const Perfil_UsuariosSchema = new mongoose.Schema(
+const PerfilUsuarioSchema = new Schema(
   {
-    usuario:{
+    usuario: {
       type: Schema.Types.ObjectId,
-      ref: 'Usuarios',
+      ref: "Usuarios",
       required: true,
-      unique: true,
     },
-    nombres:{
+    nombres: {
       type: String,
       required: true,
-      trim: true,
     },
     apellidos: {
       type: String,
-      required: true
+      required: true,
     },
-    fecha_nacimiento:{
+    fechaNacimiento: {
       type: Date,
       required: true,
-      trim: true,
     },
-    pais:{
+    pais: {
       type: String,
       required: true,
-      trim: true,
     },
-    nombre_avatar:{
+    avatarPerfil: {
       type: String,
       required: true,
-      trim: true,
     },
+    estado:{
+      type: Boolean,
+      required: false,
+      default: true,
+    }
   },
   {
-    timestamps: true, 
-    versionKey: false
+    timestamps: true,
+    versionKey: false,
   }
 );
 
-const Perfil_Usuario = mongoose.model( 'Perfil_Usuarios' , Perfil_UsuariosSchema , 'Perfil_Usuarios');
+const PerfilUsuario = mongoose.model(
+  "PerfilesUsuarios",
+  PerfilUsuarioSchema,
+  "PerfilesUsuarios"
+);
 
-export default Perfil_Usuario;
+export default PerfilUsuario;

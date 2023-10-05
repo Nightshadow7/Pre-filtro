@@ -1,31 +1,35 @@
 import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
-const UsuarioSchema = new Schema(
+const JuegoSchema = new Schema(
   {
-    nombreUsuario: {
+    tituloJuego: {
       type: String,
       required: true,
       unique: true,
     },
-    correoElectronico: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    contraseña: {
+    descripcion: {
       type: String,
       required: true,
     },
-    fechaRegistro: {
+    desarrollador: {
+      type: Schema.Types.ObjectId,
+      ref: "Desarrolladores",
+      required: true,
+    },
+    fechaLanzamiento: {
       type: Date,
       required: true,
     },
-    estado:{
+    clasificacionEdades: {
+      type: String,
+      required: true,
+    },
+    estado: {
       type: Boolean,
       required: false,
       default: true,
-    }
+    },
   },
   {
     timestamps: true,
@@ -33,6 +37,6 @@ const UsuarioSchema = new Schema(
   }
 );
 
-const Usuario = mongoose.model("Usuarios", UsuarioSchema, "Usuarios");
+const Juego = mongoose.model("Juegos", JuegoSchema);
 
-export default Usuario;
+export default Juego;
