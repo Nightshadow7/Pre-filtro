@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c95987"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c9596e",
+  "nombres": "Juan",
+  "apellidos": "Pérez",
+  "fechaNacimiento": "1990-05-15",
+  "pais": "México",
+  "avatarPerfil": "avatar1.jpg"
+},
+{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c95988"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c9596f",
+  "nombres": "Ana",
+  "apellidos": "González",
+  "fechaNacimiento": "1985-03-22",
+  "pais": "España",
+  "avatarPerfil": "avatar2.jpg"
+},
+{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c95989"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95970",
+  "nombres": "Carlos",
+  "apellidos": "Martínez",
+  "fechaNacimiento": "1992-08-10",
+  "pais": "Argentina",
+  "avatarPerfil": "avatar3.jpg"
+},
+{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c9598a"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95971",
+  "nombres": "Laura",
+  "apellidos": "Sánchez",
+  "fechaNacimiento": "1988-12-05",
+  "pais": "Colombia",
+  "avatarPerfil": "avatar4.jpg"
+},
+{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c9598b"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95972",
+  "nombres": "David",
+  "apellidos": "López",
+  "fechaNacimiento": "1995-01-30",
+  "pais": "Chile",
+  "avatarPerfil": "avatar5.jpg"
+},
+{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c9598c"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95973",
+  "nombres": "Maria",
+  "apellidos": "Hernández",
+  "fechaNacimiento": "1993-07-18",
+  "pais": "Perú",
+  "avatarPerfil": "avatar6.jpg"
+},
+{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c9598d"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95974",
+  "nombres": "Pedro",
+  "apellidos": "Díaz",
+  "fechaNacimiento": "1987-04-12",
+  "pais": "Ecuador",
+  "avatarPerfil": "avatar7.jpg"
+},
+{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c9598e"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95975",
+  "nombres": "Sofía",
+  "apellidos": "Rodríguez",
+  "fechaNacimiento": "1991-11-24",
+  "pais": "Venezuela",
+  "avatarPerfil": "avatar8.jpg"
+},
+{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c9598f"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95976",
+  "nombres": "Diego",
+  "apellidos": "Fernández",
+  "fechaNacimiento": "1994-09-03",
+  "pais": "Uruguay",
+  "avatarPerfil": "avatar9.jpg"
+},
+{
+  "_id": {
+    "$oid": "6520f0fef4e6efd1b3c95990"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95977",
+  "nombres": "Isabella",
+  "apellidos": "Lima",
+  "fechaNacimiento": "1997-06-28",
+  "pais": "Brasil",
+  "avatarPerfil": "avatar10.jpg"
+}]

@@ -12,15 +12,15 @@
 
 # 📋 Funcionalidades Principales
 
-- **Gestión de Biblioteca: Administra y organiza la colección de juegos de un usuario, permitiéndole agregar, eliminar y consultar los títulos que posee en su biblioteca de juegos.**
+- **Gestión de Biblioteca**: Administra y organiza la colección de juegos de un usuario, permitiéndole agregar, eliminar y consultar los títulos que posee en su biblioteca de juegos.
 
-- **Gestión de Usuario: Maneja las operaciones de registro, inicio de sesión y gestión de datos de usuario, como nombre, correo electrónico y contraseña, proporcionando autenticación y autorización en la plataforma de juegos.**
+- **Gestión de Usuario**: Maneja las operaciones de registro, inicio de sesión y gestión de datos de usuario, como nombre, correo electrónico y contraseña, proporcionando autenticación y autorización en la plataforma de juegos.
 
-- **Gestión de Perfil_Usuario:  Permite a los usuarios personalizar sus perfiles con información adicional, como nombre completo, fecha de nacimiento, país y avatar de perfil, mejorando la experiencia de juego social.**
+- **Gestión de Perfil_Usuario**:  Permite a los usuarios personalizar sus perfiles con información adicional, como nombre completo, fecha de nacimiento, país y avatar de perfil, mejorando la experiencia de juego social.
 
-- **Gestión de Juego:  Facilita la administración de juegos disponibles en la plataforma, incluyendo la adición de nuevos títulos, eliminación de juegos obsoletos y detalles como título, descripción y fecha de lanzamiento.**
+- **Gestión de Juego**:  Facilita la administración de juegos disponibles en la plataforma, incluyendo la adición de nuevos títulos, eliminación de juegos obsoletos y detalles como título, descripción y fecha de lanzamiento.
 
-- **Gestión de Desarrollador: Administra la información de los desarrolladores de juegos, como nombre de la empresa y país de origen, para mostrar créditos y detalles de contacto en la plataforma de juegos.**
+- **Gestión de Desarrollador**: Administra la información de los desarrolladores de juegos, como nombre de la empresa y país de origen, para mostrar créditos y detalles de contacto en la plataforma de juegos.
 
 <br>
 
@@ -30,13 +30,13 @@
 
 ## Diagrama Entidad relacion en SQL
 
-![Diagrama Entidad Relación](./backend/db/db.sql)
+El Modelo entidad relacion se realizo en dbdesigner y se puede visualizar mediante el siguiente enlace [Diagrama Entidad Relación](https://dbdesigner.page.link/nxcwPLx44ytE7iYW8)
 
 <br>
 
 # 🎨 Diseño UIX
 
-![Diseño UIX](./frontend/src/assets/UIX.png)
+El diseño del proyecto se encuentra en el siguiente enlace [Designer✨](https://www.figma.com/file/XbcioNWSb5MJYOUE5BQHkY/Untitled?type=whiteboard&node-id=0%3A1&t=9UaIrrjGJnnLJhbK-1)
 
 # Tecnologías Utilizadas
 
@@ -48,6 +48,8 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express.js" width="70" height="70" stroke="white"/>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" width="70" height="70" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" width="70" height="70" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="ReactBootstrap" width="70" height="70"/>
+          
 </div>
 
 <br>

@@ -1,25 +1,15 @@
-import PerfilUsuario from "./../models/Usuario.js";
-import Usuario from "./../models/Usuario.js";
-import { date } from './../helpers/DateValidator.js';
+import PerfilesUsuarios from "../models/PerfilUsuario.js";
+import Usuario from "../models/Usuario.js";
+import { date } from '../helpers/DateValidator.js';
 import { response } from "express";
-import { httpError } from "./../helpers/handleError.js";
+import { httpError } from "../helpers/handleError.js";
 
-export const getPerfil_Usuarios = async (req, res = response) => {
+export const getPerfil_Usuarios = async (req, res ) => {
   try {
-    const { hasta = 10, desde = 0 } = req.query;
-    const query = {
-      estado: true,
-    };
-    const [total, perfil_Usuarios] = await Promise.all([
-      PerfilUsuario.countDocuments(query),
-      PerfilUsuario.find(query)
-        .populate("usuario", "-contraseña -fechaRegistro -estado")
-        .skip(Number(desde))
-        .limit(Number(hasta)),
-    ]);
+    const data = await PerfilesUsuarios.find()
+    .populate('usuario', 'nombreUsuario ')
     res.json({
-      total,
-      perfil_Usuarios,
+        alquiler: data
     });
   } catch (err) {
     httpError(res, err);
@@ -28,9 +18,9 @@ export const getPerfil_Usuarios = async (req, res = response) => {
 export const getOnePerfil_Usuario = async (req, res = response) => {
   try {
     const { id } = req.params;
-    const onePerfil_Usuario = await PerfilUsuario.findById(id).populate(
+    const onePerfil_Usuario = await PerfilesUsuarios.findById(id).populate(
       "usuario",
-      "-contraseña -fechaRegistro"
+      "-contraseña"
     );
 
     res.json(onePerfil_Usuario);
@@ -43,7 +33,7 @@ export const postPerfil_Usuario = async (req, res = response) => {
     const { usuario, fecha_nacimiento, ...body } = req.body;
     const [nacimiento, usuarioDB, nombre] = await Promise.all([
       date(fecha_nacimiento),
-      PerfilUsuario.findOne({ usuario: body.usuario }),
+      PerfilesUsuarios.findOne({ usuario: body.usuario }),
       Usuario.findOne({ _id: usuario }),
     ]);
     if (usuarioDB) {
@@ -56,7 +46,7 @@ export const postPerfil_Usuario = async (req, res = response) => {
       fecha_nacimiento: nacimiento,
       ...body,
     };
-    const usuarios = new PerfilUsuario(data);
+    const usuarios = new PerfilesUsuarios(data);
     await usuarios.save();
     res.status(201).json(usuarios);
   } catch (err) {
@@ -66,13 +56,13 @@ export const postPerfil_Usuario = async (req, res = response) => {
 export const deletePerfil_Usuario = async (req, res = response) => {
   try {
     const { id } = req.params;
-    const Perfil_UsuarioEliminado = await PerfilUsuario.findByIdAndUpdate(
+    const Perfil_UsuarioEliminado = await PerfilesUsuarios.findByIdAndUpdate(
       id,
       { estado: false },
       { new: true }
     );
     res.status(200).json({
-      msg: `El usuario "${Perfil_UsuarioEliminado.nombre}", fue eliminado satisfactoriamente`,
+      msg: `El usuario "${Perfil_UsuarioEliminado.nombres}", fue eliminado satisfactoriamente`,
     });
   } catch (err) {
     httpError(res, err);
@@ -80,7 +70,7 @@ export const deletePerfil_Usuario = async (req, res = response) => {
 };
 export const updatePerfil_Usuario = async (req, res = response) => {
   try {
-    const updatedPerfil_Usuario = await PerfilUsuario.findOneAndUpdate(
+    const updatedPerfil_Usuario = await PerfilesUsuarios.findOneAndUpdate(
       { _id: req.params.id },
       req.body,
       { new: true }

@@ -1,0 +1,45 @@
+/* From uiverse.io by @Ali-Tahmazi99 */
+button {
+  display: inline-block;
+  height: 50px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 1;
+}
+
+button::before,
+button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transform: skew(15deg);
+  transition: all 0.5s;
+  overflow: hidden;
+  z-index: -1;
+}
+
+button::before {
+  left: -10px;
+}
+
+button::after {
+  right: -10px;
+}
+
+button:hover::before,
+button:hover::after {
+  width: 64%;
+}
+
+button:hover span {
+  transition: 0.3s;
+}
+
+button span {
+  font-size: 18px;
+  transition: all 0.3s ease-in;
+}

@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c95869"
+  },
+  "nombreDesarrollador": "Epic Games",
+  "paisOrigen": "Estados Unidos",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c9586a"
+  },
+  "nombreDesarrollador": "Ubisoft",
+  "paisOrigen": "Francia",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c9586b"
+  },
+  "nombreDesarrollador": "Rockstar Games",
+  "paisOrigen": "Estados Unidos",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c9586c"
+  },
+  "nombreDesarrollador": "Nintendo",
+  "paisOrigen": "Japón",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c9586d"
+  },
+  "nombreDesarrollador": "CD Projekt Red",
+  "paisOrigen": "Polonia",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c9586e"
+  },
+  "nombreDesarrollador": "Naughty Dog",
+  "paisOrigen": "Estados Unidos",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c9586f"
+  },
+  "nombreDesarrollador": "Square Enix",
+  "paisOrigen": "Japón",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c95870"
+  },
+  "nombreDesarrollador": "Capcom",
+  "paisOrigen": "Japón",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c95871"
+  },
+  "nombreDesarrollador": "Blizzard Entertainment",
+  "paisOrigen": "Estados Unidos",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520e966f4e6efd1b3c95872"
+  },
+  "nombreDesarrollador": "Valve",
+  "paisOrigen": "Estados Unidos",
+  "estado": true
+}]

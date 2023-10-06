@@ -40,10 +40,6 @@ const PerfilUsuarioSchema = new Schema(
   }
 );
 
-const PerfilUsuario = mongoose.model(
-  "PerfilesUsuarios",
-  PerfilUsuarioSchema,
-  "PerfilesUsuarios"
-);
+const PerfilesUsuarios = mongoose.model( "PerfilesUsuarios", PerfilUsuarioSchema, "PerfilesUsuarios" );
 
-export default PerfilUsuario;
+export default PerfilesUsuarios;

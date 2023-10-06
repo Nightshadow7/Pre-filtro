@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c9596e"
+  },
+  "nombreUsuario": "gamer123",
+  "correoElectronico": "gamer123@example.com",
+  "contraseña": "contraseña123",
+  "fechaRegistro": "2023-09-01",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c9596f"
+  },
+  "nombreUsuario": "proGamer22",
+  "correoElectronico": "pro22@example.com",
+  "contraseña": "miSecretPassword",
+  "fechaRegistro": "2023-08-25",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c95970"
+  },
+  "nombreUsuario": "gamingMaster",
+  "correoElectronico": "mastergamer@example.com",
+  "contraseña": "passw0rdGaming!",
+  "fechaRegistro": "2023-08-20",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c95971"
+  },
+  "nombreUsuario": "epicPlayer",
+  "correoElectronico": "epic@example.com",
+  "contraseña": "EpicPass123",
+  "fechaRegistro": "2023-08-15",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c95972"
+  },
+  "nombreUsuario": "valveFan",
+  "correoElectronico": "valve@example.com",
+  "contraseña": "Valve1234",
+  "fechaRegistro": "2023-08-10",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c95973"
+  },
+  "nombreUsuario": "steamAddict",
+  "correoElectronico": "steam@example.com",
+  "contraseña": "SteamPassWord",
+  "fechaRegistro": "2023-08-05",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c95974"
+  },
+  "nombreUsuario": "gameLover45",
+  "correoElectronico": "gameLover45@example.com",
+  "contraseña": "GamerLove123",
+  "fechaRegistro": "2023-07-30",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c95975"
+  },
+  "nombreUsuario": "gameChanger",
+  "correoElectronico": "gameChanger@example.com",
+  "contraseña": "ChangeTheGame",
+  "fechaRegistro": "2023-07-25",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c95976"
+  },
+  "nombreUsuario": "consoleGamer",
+  "correoElectronico": "consoleGamer@example.com",
+  "contraseña": "Console123",
+  "fechaRegistro": "2023-07-20",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520ee6cf4e6efd1b3c95977"
+  },
+  "nombreUsuario": "onlineGamer",
+  "correoElectronico": "onlineGamer@example.com",
+  "contraseña": "OnlineGamerPass",
+  "fechaRegistro": "2023-07-15",
+  "estado": true
+}]

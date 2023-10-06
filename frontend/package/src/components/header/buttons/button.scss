@@ -1,0 +1,22 @@
+.top-button{
+  box-sizing: content-box;
+  width: 100%;
+  background-color: #898888;
+  border: 5px solid #03045e;
+}
+
+.top-button::before {
+  background: #2d1c3dc2;
+}
+
+.top-button::after {
+  background: #604a76c6;
+}
+
+.top-button:hover span {
+  color: #d1d1d1;
+}
+
+.top-button span {
+  color: #03045e;
+}

@@ -3,25 +3,26 @@ import conectarDB from "./../../config/mongo.js";
 import allRoutes from "../routes/index.js";
 import cors from "cors";
 
-// import { createEmpresa, createRoles } from "../libs/initialSetUp.js";
-
 class Server {
   constructor() {
-    this.port = process.env.PORT;
+    this.port = process.env.PORT || 8000; // Establece un puerto predeterminado si no se proporciona PORT
     this.app = express();
     this.routesV1 = "/api";
-    // this.middlewares();
+    this.middlewares();
     this.connectDatabase();
     this.routes();
   }
 
-  // middlewares(){
-  //     this.app.use(express.json());
-  //     this.app.use(cors());
-  // }
-
   async connectDatabase() {
     await conectarDB();
+  }
+
+  middlewares() {
+    // Configura las cabeceras CORS adecuadas
+    this.app.use(cors());
+
+    // Habilita el análisis de cuerpos JSON
+    this.app.use(express.json());
   }
 
   listen() {
@@ -36,3 +37,5 @@ class Server {
 }
 
 export default Server;
+
+

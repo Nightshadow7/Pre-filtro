@@ -37,6 +37,6 @@ const JuegoSchema = new Schema(
   }
 );
 
-const Juego = mongoose.model("Juegos", JuegoSchema);
+const Juego = mongoose.model("Juegos", JuegoSchema , "Juegos");
 
 export default Juego;

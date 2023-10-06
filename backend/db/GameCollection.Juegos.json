@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c9587d"
+  },
+  "tituloJuego": "Assassin's Creed Valhalla",
+  "descripcion": "Vive la saga de los vikingos en la última entrega de Assassin's Creed.",
+  "desarrollador": "6520e966f4e6efd1b3c95869",
+  "fechaLanzamiento": "2020-11-10",
+  "clasificacionEdades": "Mature 17+",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c9587e"
+  },
+  "tituloJuego": "Red Dead Redemption 2",
+  "descripcion": "Adéntrate en el salvaje oeste en esta épica aventura de Rockstar Games.",
+  "desarrollador": "6520e966f4e6efd1b3c9586a",
+  "fechaLanzamiento": "2018-10-26",
+  "clasificacionEdades": "Mature 17+",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c9587f"
+  },
+  "tituloJuego": "The Legend of Zelda: Breath of the Wild",
+  "descripcion": "Explora el vasto mundo de Hyrule en esta aventura de Nintendo.",
+  "desarrollador": "6520e966f4e6efd1b3c9586b",
+  "fechaLanzamiento": "2017-03-03",
+  "clasificacionEdades": "Everyone 10+",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c95880"
+  },
+  "tituloJuego": "Cyberpunk 2077",
+  "descripcion": "Sumérgete en la distópica Night City en este juego de CD Projekt Red.",
+  "desarrollador": "6520e966f4e6efd1b3c9586c",
+  "fechaLanzamiento": "2020-12-10",
+  "clasificacionEdades": "Mature 17+",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c95881"
+  },
+  "tituloJuego": "The Last of Us Part II",
+  "descripcion": "Sobrevive en un mundo postapocalíptico en esta obra maestra de Naughty Dog.",
+  "desarrollador": "6520e966f4e6efd1b3c9586d",
+  "fechaLanzamiento": "2020-06-19",
+  "clasificacionEdades": "Mature 17+",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c95882"
+  },
+  "tituloJuego": "Final Fantasy VII Remake",
+  "descripcion": "Revive la historia de Cloud y Sephiroth en este remake de Square Enix.",
+  "desarrollador": "6520e966f4e6efd1b3c9586e",
+  "fechaLanzamiento": "2020-04-10",
+  "clasificacionEdades": "Teen 13+",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c95883"
+  },
+  "tituloJuego": "Resident Evil Village",
+  "descripcion": "Enfréntate a horrores sobrenaturales en este juego de Capcom.",
+  "desarrollador": "6520e966f4e6efd1b3c9586f",
+  "fechaLanzamiento": "2021-05-07",
+  "clasificacionEdades": "Mature 17+",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c95884"
+  },
+  "tituloJuego": "Overwatch",
+  "descripcion": "Únete a un equipo de héroes en este juego de Blizzard Entertainment.",
+  "desarrollador": "6520e966f4e6efd1b3c95870",
+  "fechaLanzamiento": "2016-05-24",
+  "clasificacionEdades": "Teen 13+",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c95885"
+  },
+  "tituloJuego": "Half-Life: Alyx",
+  "descripcion": "Explora el mundo de Half-Life en realidad virtual con Valve.",
+  "desarrollador": "6520e966f4e6efd1b3c95871",
+  "fechaLanzamiento": "2020-03-23",
+  "clasificacionEdades": "Mature 17+",
+  "estado": true
+},
+{
+  "_id": {
+    "$oid": "6520eb4bf4e6efd1b3c95886"
+  },
+  "tituloJuego": "The Witcher 3: Wild Hunt",
+  "descripcion": "Embárcate en una épica aventura en este juego de CD Projekt Red.",
+  "desarrollador": "6520e966f4e6efd1b3c95872",
+  "fechaLanzamiento": "2015-05-19",
+  "clasificacionEdades": "Mature 17+",
+  "estado": true
+}]

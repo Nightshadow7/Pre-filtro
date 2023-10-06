@@ -1,0 +1,120 @@
+[{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c95978"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c9596e",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c9587d",
+  "fechaAdquisicion": "2023-09-10"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c95979"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c9596f",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c9587e",
+  "fechaAdquisicion": "2023-09-11"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c9597a"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95970",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c9587f",
+  "fechaAdquisicion": "2023-09-12"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c9597b"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95971",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95880",
+  "fechaAdquisicion": "2023-09-13"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c9597c"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95972",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95881",
+  "fechaAdquisicion": "2023-09-14"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c9597d"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95973",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95882",
+  "fechaAdquisicion": "2023-09-15"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c9597e"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95974",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95883",
+  "fechaAdquisicion": "2023-09-16"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c9597f"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95975",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95884",
+  "fechaAdquisicion": "2023-09-17"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c95980"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95976",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95885",
+  "fechaAdquisicion": "2023-09-18"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c95981"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95977",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95886",
+  "fechaAdquisicion": "2023-09-19"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c95982"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c9596e",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95880",
+  "fechaAdquisicion": "2023-09-20"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c95983"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c9596f",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95881",
+  "fechaAdquisicion": "2023-09-21"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c95984"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95970",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95882",
+  "fechaAdquisicion": "2023-09-22"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c95985"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95971",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95883",
+  "fechaAdquisicion": "2023-09-23"
+},
+{
+  "_id": {
+    "$oid": "6520ef79f4e6efd1b3c95986"
+  },
+  "usuario": "6520ee6cf4e6efd1b3c95972",
+  "juegoAdquirido": "6520eb4bf4e6efd1b3c95884",
+  "fechaAdquisicion": "2023-09-24"
+}]

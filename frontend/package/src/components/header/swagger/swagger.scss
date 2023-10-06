@@ -1,0 +1,24 @@
+.swagger-button{
+  box-sizing: content-box;
+  width: 100%;
+  background-color: #46b118;
+  margin-left: 3vh;
+  border: 5px solid #c6ed05;
+}
+
+.swagger-button::before {
+  background: #2cdd9c;
+}
+
+.swagger-button::after {
+  background: #24fbff;
+}
+
+.swagger-button:hover span {
+  color: #010005;
+}
+
+.swagger-button span {
+  color: #e8e8f4;
+  font-size: 1.4vh;
+}
